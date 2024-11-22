@@ -12,7 +12,7 @@ SunergyCityJSON is a Python-based framework enabled by CityJSON designed to join
 - Obtaining information on solar heat gain by individual walls.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3ce7eae3-4c89-443b-bbfe-3d300713a265" alt="Image 1" width="45%">
-  <img src="https://github.com/user-attachments/assets/b5741e3a-42f2-4ed7-84b5-72e5167629b2" alt="Image 2" width="45%">
+  <img src="https://github.com/user-attachments/assets/932aebf7-4eac-4747-8be0-0fdcd9262f1c" alt="Image 2" width="45%">
 </p>
 
 # Run 
