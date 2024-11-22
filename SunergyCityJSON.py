@@ -4,7 +4,6 @@ import copy
 import os
 import math
 import geopandas as gpd
-# from shapely import intersection
 from suncalc import get_position
 import datetime
 import pytz
@@ -2225,7 +2224,7 @@ solar_gains=ax.fill_between(x, annual_solar_gains_plotting[start_hour_plotting:e
 hc_demand=ax.fill_between(x, [-1*element for element in annual_HC_demand_plotting[start_hour_plotting:end_hour_plotting]], alpha=0.8, label=' H/C demand', color='#A7C7E7')
 ax.set_ylabel('Solar gain [kWh] /H/C demand[Wh/m$^{2}$]',fontname='cmr10',fontsize=12)
 ax.set_xlabel('time [h]',fontname='cmr10',fontsize=12)
-ax.set_title("Solar Heat Gain for September, 29$^{th}$",fontname='cmr10')
+ax.set_title("Space Cooling demand for September, 29$^{th}$",fontname='cmr10')
 ax2 = ax.twinx()
 thermal_comfort=ax2.fill_between(x, 21, 24, color='gray', alpha=0.5, label='T$_{comfort}$')
 T_out=ax2.plot(x,outside_temperature[start_hour_plotting:end_hour_plotting]['t'],color='red',label='Outside Temperature')
