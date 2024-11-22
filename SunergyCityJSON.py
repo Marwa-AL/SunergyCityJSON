@@ -2229,9 +2229,10 @@ ax2 = ax.twinx()
 thermal_comfort=ax2.fill_between(x, 21, 24, color='gray', alpha=0.5, label='T$_{comfort}$')
 T_out=ax2.plot(x,outside_temperature[start_hour_plotting:end_hour_plotting]['t'],color='red',label='Outside Temperature')
 T_in=ax2.plot(x,annual_inside_temperature[start_hour_plotting:end_hour_plotting],label='Inside Temperature')
+ax2.set_ylabel('Temperature [$^\circ$C]',fontname='cmr10',fontsize=12)  
 plt.ylim(0, 30)
 plt.xticks(x)
-plt.xlim(0, (end_hour_plotting-start_hour_plotting))
+plt.xlim(0, (end_hour_plotting-start_hour_plotting)-1)
 
 # Combine the legends from both axes
 handles1, labels1 = ax.get_legend_handles_labels()  # Legends from ax1 (sin(x))
