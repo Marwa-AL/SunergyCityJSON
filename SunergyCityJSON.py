@@ -2201,69 +2201,6 @@ with open(project_dir/"output/heating_cooling_demand"/"occupant_gains.pickle", "
 with open(project_dir/"output/heating_cooling_demand"/"solar_gains_windows_indv_walls.pickle", "wb") as handle:
     pickle.dump(solar_gains_windows_indv_walls, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-# with open('C:/Users/ge46mey/Desktop/Certificates/HC_calculations/occupant_gains.pickle', 'rb') as handle:
-#     occupant_gains_loaded = pickle.load(handle)
-    
- 
-
-
-# Ph_buildings=[] # each index in this list is equivelent to building number
-# T_buildings=[]
-# sums_heating=[]
-# sums_cooling=[]
-# sums_solar=[]
-# sums_occupants=[]
-# sums_trans=[]
-# sums_s_heating=[]
-# for building_num in range(1):
-#     Ph_building_0=[]
-#     T_building_0=[]
-#     summ=0
-#     sum_cooling=0
-#     sum_s=0
-#     sum_p=0
-#     sum_tr=0
-#     sum_s_heating=0
-#     for i in range(1,len(annual_space_heating_demand)):
-#         Ph_building_0.append(annual_space_heating_demand[i][building_num])
-#         sum_s=solar_gains_windows[i][building_num]+sum_s
-#         sum_p=occupant_gains[i][building_num]+sum_p
-#         sum_tr=abs(transmission_gains[i][building_num])+sum_tr
-#         T_building_0.append(T_building_timeseries[i][building_num])
-#         if annual_space_heating_demand[i][building_num]>0:
-#             summ=summ+abs(annual_space_heating_demand[i][building_num])
-#             sum_s_heating=solar_gains_windows[i][building_num]+sum_s_heating
-
-#         if annual_space_heating_demand[i][building_num]<0:
-#             sum_cooling=sum_cooling+abs(annual_space_heating_demand[i][building_num])
-            
-#     Ph_buildings.append(Ph_building_0)
-#     T_buildings.append(T_building_0)
-#     sums_heating.append(summ)
-#     sums_cooling.append(sum_cooling)
-#     sums_solar.append(sum_s/1000)
-#     sums_occupants.append(sum_p/10E6)
-#     sums_trans.append(sum_tr/10E6)
-#     sums_s_heating.append(sum_s_heating)
-
-# print('sums_heating',sums_heating)
-# print('sums_cooling',sums_cooling)
-
-# for i in range(1):
-#     modified_ph=[]
-#     for x in Ph_buildings[i]:
-        
-#         if x < 0:
-#             modified_ph.append(x)
-#         else:
-#             modified_ph.append(x)
-
-#     plt.figure()
-#     plt.plot(range(len(modified_ph)),modified_ph)
-#     plt.figure()
-#     plt.plot(range(len(T_buildings[i])),T_buildings[i])
-
-
 
 # Defining the plot time interval 
 doy=271
