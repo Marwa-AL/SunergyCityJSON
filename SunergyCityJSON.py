@@ -2234,7 +2234,7 @@ plt.ylim(0, 30)
 plt.xticks(x)
 plt.xlim(0, (end_hour_plotting-start_hour_plotting)-1)
 
-# Combine the legends from both axes
+# Combine the legends from both axes 
 handles1, labels1 = ax.get_legend_handles_labels()  # Legends from ax1 (sin(x))
 handles2, labels2 = ax2.get_legend_handles_labels()  # Legends from ax2 (cos(x))
 
