@@ -16,12 +16,12 @@ SunergyCityJSON is a Python-based framework enabled by CityJSON designed to join
 </p>
 
 # Instruction on input data 
-- Year of construction
-  
 - CityJSON file of the 3D building model: 
   - Download open-access LoD2 data of Bavaria in Citygml format from https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=lod2
   - Convert citygml to cityJSON using https://github.com/citygml4j/citygml-tools. After clonning the reoprository you may use the command line: `citygml-tools to-cityjson --cityjson-version=1.0 /path/to/your/CityGML/file.gml`
 
+- Year of construction
+  Building age is used as an indicator for the thrermal properties of the building enevelope which is then used for heat transfer calculation and the estimation of heating and cooling demand. Therefor, a shapefile including buildings' foortprints and the corresponsing year of construction is required as an input.  
     
 - Yearly outside temperature data
 
